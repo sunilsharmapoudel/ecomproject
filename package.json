@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "module": "module",
   "description": "",
-  "server": "nodemon backend/index.js",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "server": "nodemon --env-file=.env backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sunil Sharma",
