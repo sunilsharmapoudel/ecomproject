@@ -5,7 +5,7 @@ import notfoundMiddleware from './middleware/notfoundMiddleware.js';
 import cookieParser from 'cookie-parser';
 //router imports
 import userRouter from "./routes/user.router.js";
-
+import productRouter from './routes/product.router.js';
 
 //initialize express app
 const app = express();
@@ -17,6 +17,7 @@ app.use(logger);
 
 //routes
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/product", productRouter);
 
 //errorhandlers
 app.use(errorHandler);
